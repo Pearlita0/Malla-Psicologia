@@ -1,0 +1,144 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Malla Interactiva - Psicología</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f2f5;
+      padding: 2rem;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .semester {
+      margin-bottom: 2rem;
+    }
+    .semester h2 {
+      background-color: #0077b6;
+      color: white;
+      padding: 0.75rem;
+      border-radius: 6px;
+    }
+    .course {
+      background-color: white;
+      padding: 1rem;
+      border-radius: 6px;
+      margin: 0.5rem 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      cursor: pointer;
+    }
+    .course:hover {
+      background-color: #e0f4ff;
+    }
+    .details {
+      display: none;
+      margin-top: 0.5rem;
+      color: #444;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Malla Interactiva - Psicología</h1>
+
+<div class="semester">
+  <h2>Primer Semestre</h2>
+  <div class="course" onclick="toggleDetails(this)">Taller de Análisis de la Realidad Regional<div class="details">Créditos: -- | Contenido: --</div></div>
+  <div class="course" onclick="toggleDetails(this)">Historia del Pensamiento Psicológico<div class="details">Créditos: -- | Contenido: --</div></div>
+  <div class="course" onclick="toggleDetails(this)">Bases Sociales del Comportamiento<div class="details">Créditos: -- | Contenido: --</div></div>
+  <div class="course" onclick="toggleDetails(this)">Bases Biológicas del Comportamiento<div class="details">Créditos: -- | Contenido: --</div></div>
+  <div class="course" onclick="toggleDetails(this)">Comunicación I<div class="details">Créditos: -- | Contenido: --</div></div>
+  <div class="course" onclick="toggleDetails(this)">Electivo<div class="details">Créditos: -- | Contenido: --</div></div>
+</div>
+
+<div class="semester">
+  <h2>Segundo Semestre</h2>
+  <div class="course" onclick="toggleDetails(this)">Psicología Social I<div class="details">Créditos: -- | Contenido: --</div></div>
+  <div class="course" onclick="toggleDetails(this)">Ciclo Vital I<div class="details">Créditos: -- | Contenido: --</div></div>
+  <div class="course" onclick="toggleDetails(this)">Teoría Psicoanalítica<div class="details">Créditos: -- | Contenido: --</div></div>
+  <div class="course" onclick="toggleDetails(this)">Teoría Humanista<div class="details">Créditos: -- | Contenido: --</div></div>
+  <div class="course" onclick="toggleDetails(this)">Taller de Comunicación Interpersonal<div class="details">Créditos: -- | Contenido: --</div></div>
+  <div class="course" onclick="toggleDetails(this)">Ciudadanía I<div class="details">Créditos: -- | Contenido: --</div></div>
+</div>
+
+<div class="semester">
+  <h2>Tercer Semestre</h2>
+  <div class="course" onclick="toggleDetails(this)">Psicología Social II<div class="details">Créditos: -- | Contenido: --</div></div>
+  <div class="course" onclick="toggleDetails(this)">Ciclo Vital II<div class="details">Créditos: -- | Contenido: --</div></div>
+  <div class="course" onclick="toggleDetails(this)">Teoría Cognitiva<div class="details">Créditos: -- | Contenido: --</div></div>
+  <div class="course" onclick="toggleDetails(this)">Teoría Sistemática<div class="details">Créditos: -- | Contenido: --</div></div>
+  <div class="course" onclick="toggleDetails(this)">Epidemiología<div class="details">Créditos: -- | Contenido: --</div></div>
+  <div class="course" onclick="toggleDetails(this)">Inglés I<div class="details">Créditos: -- | Contenido: --</div></div>
+</div>
+
+<div class="semester">
+  <h2>Cuarto Semestre</h2>
+  <div class="course" onclick="toggleDetails(this)">Taller de Integración<div class="details">Créditos: -- | Contenido: --</div></div>
+  <div class="course" onclick="toggleDetails(this)">Neuropsicología<div class="details">Créditos: -- | Contenido: --</div></div>
+  <div class="course" onclick="toggleDetails(this)">Psicopatología Infanto-Juvenil<div class="details">Créditos: -- | Contenido: --</div></div>
+  <div class="course" onclick="toggleDetails(this)">Metodología de la Investigación I<div class="details">Créditos: -- | Contenido: --</div></div>
+  <div class="course" onclick="toggleDetails(this)">Inglés II<div class="details">Créditos: -- | Contenido: --</div></div>
+  <div class="course" onclick="toggleDetails(this)">Electivo<div class="details">Créditos: -- | Contenido: --</div></div>
+</div>
+
+<div class="semester">
+  <h2>Quinto Semestre</h2>
+  <div class="course" onclick="toggleDetails(this)">Psicología Organizacional<div class="details">Créditos: -- | Contenido: --</div></div>
+  <div class="course" onclick="toggleDetails(this)">Psicología Comunitaria<div class="details">Créditos: -- | Contenido: --</div></div>
+  <div class="course" onclick="toggleDetails(this)">Psicopatología de Adultos<div class="details">Créditos: -- | Contenido: --</div></div>
+  <div class="course" onclick="toggleDetails(this)">Metodología de la Investigación II<div class="details">Créditos: -- | Contenido: --</div></div>
+  <div class="course" onclick="toggleDetails(this)">Inglés III<div class="details">Créditos: -- | Contenido: --</div></div>
+  <div class="course" onclick="toggleDetails(this)">Electivo<div class="details">Créditos: -- | Contenido: --</div></div>
+</div>
+
+<div class="semester">
+  <h2>Sexto Semestre</h2>
+  <div class="course" onclick="toggleDetails(this)">Psicología Clínica<div class="details">Créditos: -- | Contenido: --</div></div>
+  <div class="course" onclick="toggleDetails(this)">Psicología Educacional<div class="details">Créditos: -- | Contenido: --</div></div>
+  <div class="course" onclick="toggleDetails(this)">Evaluación Neurocognitiva<div class="details">Créditos: -- | Contenido: --</div></div>
+  <div class="course" onclick="toggleDetails(this)">Metodología de la Investigación III<div class="details">Créditos: -- | Contenido: --</div></div>
+  <div class="course" onclick="toggleDetails(this)">Inglés IV<div class="details">Créditos: -- | Contenido: --</div></div>
+</div>
+
+<div class="semester">
+  <h2>Séptimo Semestre</h2>
+  <div class="course" onclick="toggleDetails(this)">Seminario de Licenciatura I<div class="details">Créditos: -- | Contenido: --</div></div>
+  <div class="course" onclick="toggleDetails(this)">Evaluación de la Personalidad<div class="details">Créditos: -- | Contenido: --</div></div>
+  <div class="course" onclick="toggleDetails(this)">Intervención Psicoeducativa<div class="details">Créditos: -- | Contenido: --</div></div>
+  <div class="course" onclick="toggleDetails(this)">Intervención Organizacional<div class="details">Créditos: -- | Contenido: --</div></div>
+  <div class="course" onclick="toggleDetails(this)">Electivo<div class="details">Créditos: -- | Contenido: --</div></div>
+</div>
+
+<div class="semester">
+  <h2>Octavo Semestre</h2>
+  <div class="course" onclick="toggleDetails(this)">Seminario de Licenciatura II<div class="details">Créditos: -- | Contenido: --</div></div>
+  <div class="course" onclick="toggleDetails(this)">Taller de Psicodiagnóstico<div class="details">Créditos: -- | Contenido: --</div></div>
+  <div class="course" onclick="toggleDetails(this)">Intervención Clínica<div class="details">Créditos: -- | Contenido: --</div></div>
+  <div class="course" onclick="toggleDetails(this)">Intervención Comunitaria<div class="details">Créditos: -- | Contenido: --</div></div>
+</div>
+
+<div class="semester">
+  <h2>Noveno Semestre</h2>
+  <div class="course" onclick="toggleDetails(this)">Práctica Profesional I<div class="details">Créditos: -- | Contenido: --</div></div>
+  <div class="course" onclick="toggleDetails(this)">Taller de Ética Profesional<div class="details">Créditos: -- | Contenido: --</div></div>
+</div>
+
+<div class="semester">
+  <h2>Décimo Semestre</h2>
+  <div class="course" onclick="toggleDetails(this)">Práctica Profesional II<div class="details">Créditos: -- | Contenido: --</div></div>
+  <div class="course" onclick="toggleDetails(this)">Examen de Título<div class="details">Créditos: -- | Contenido: --</div></div>
+</div>
+
+<script>
+  function toggleDetails(courseElement) {
+    const details = courseElement.querySelector('.details');
+    details.style.display = (details.style.display === 'block') ? 'none' : 'block';
+  }
+</script>
+
+</body>
+</html>
