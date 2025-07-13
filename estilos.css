@@ -3,19 +3,23 @@ body {
   background-color: #f0f2f5;
   padding: 2rem;
 }
+
 h1 {
   text-align: center;
   margin-bottom: 2rem;
 }
+
 .semester {
   margin-bottom: 2rem;
 }
+
 .semester h2 {
   background-color: #0077b6;
   color: white;
   padding: 0.75rem;
   border-radius: 6px;
 }
+
 .course {
   background-color: white;
   padding: 1rem;
@@ -23,10 +27,20 @@ h1 {
   margin: 0.5rem 0;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   cursor: pointer;
+  user-select: none;
 }
-.course:hover {
-  background-color: #e0f4ff;
+
+.course.locked {
+  pointer-events: none;
+  opacity: 0.5;
+  cursor: not-allowed;
 }
+
+.course.completed {
+  text-decoration: line-through;
+  background-color: #d1ffd1;
+}
+
 .details {
   display: none;
   margin-top: 0.5rem;
