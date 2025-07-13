@@ -1,45 +1,10 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Malla Interactiva - Psicología</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f0f2f5;
-      padding: 2rem;
-    }
-    h1 {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-    .semester {
-      margin-bottom: 2rem;
-    }
-    .semester h2 {
-      background-color: #0077b6;
-      color: white;
-      padding: 0.75rem;
-      border-radius: 6px;
-    }
-    .course {
-      background-color: white;
-      padding: 1rem;
-      border-radius: 6px;
-      margin: 0.5rem 0;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      cursor: pointer;
-    }
-    .course:hover {
-      background-color: #e0f4ff;
-    }
-    .details {
-      display: none;
-      margin-top: 0.5rem;
-      color: #444;
-      font-size: 0.95rem;
-    }
-  </style>
+  <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
 
@@ -107,7 +72,7 @@
 <div class="semester">
   <h2>Séptimo Semestre</h2>
   <div class="course" onclick="toggleDetails(this)">Seminario de Licenciatura I<div class="details">Créditos: -- | Contenido: --</div></div>
-  <div class="course" onclick="toggleDetails(this)">Evaluación de la Personalidad<div class="details">Créditos: -- | Contenido: --</div></div>
+  <div class="course" onclick="toggleDetails(this)">Evaluación Personalidad<div class="details">Créditos: -- | Contenido: --</div></div>
   <div class="course" onclick="toggleDetails(this)">Intervención Psicoeducativa<div class="details">Créditos: -- | Contenido: --</div></div>
   <div class="course" onclick="toggleDetails(this)">Intervención Organizacional<div class="details">Créditos: -- | Contenido: --</div></div>
   <div class="course" onclick="toggleDetails(this)">Electivo<div class="details">Créditos: -- | Contenido: --</div></div>
@@ -133,12 +98,7 @@
   <div class="course" onclick="toggleDetails(this)">Examen de Título<div class="details">Créditos: -- | Contenido: --</div></div>
 </div>
 
-<script>
-  function toggleDetails(courseElement) {
-    const details = courseElement.querySelector('.details');
-    details.style.display = (details.style.display === 'block') ? 'none' : 'block';
-  }
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
