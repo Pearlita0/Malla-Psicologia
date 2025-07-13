@@ -11,26 +11,71 @@ body {
   background-color: var(--color-neutro-claro);
   color: var(--color-neutro-oscuro);
   font-family: Arial, sans-serif;
+  padding: 2rem;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--color-neutro-oscuro);
+}
+
+.semester {
+  margin-bottom: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
 }
 
 .semester h2 {
   background-color: var(--color-primario);
   color: var(--color-neutro-oscuro);
+  padding: 0.75rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  user-select: none;
 }
 
 .course {
   background-color: white;
   border: 2px solid var(--color-primario);
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100px;
+  transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
   color: var(--color-neutro-oscuro);
-  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .course:hover:not(.locked) {
   background-color: var(--color-secundario);
   border-color: var(--color-primario-oscuro);
+  transform: translateY(-3px);
+}
+
+.course.locked {
+  pointer-events: none;
+  opacity: 0.5;
+  cursor: not-allowed;
+  border-color: var(--color-primario-oscuro);
+  background-color: var(--color-neutro-claro);
 }
 
 .course.completed {
   background-color: var(--color-complementario);
   text-decoration: line-through;
+  border-color: var(--color-complementario);
+  color: var(--color-neutro-oscuro);
+}
+
+.details {
+  display: none;
+  margin-top: 0.5rem;
+  color: var(--color-neutro-oscuro);
+  font-size: 0.9rem;
 }
