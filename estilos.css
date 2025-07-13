@@ -1,49 +1,36 @@
+:root {
+  --color-primario: #f1c1e5;
+  --color-primario-oscuro: #d18bb8;
+  --color-secundario: #e8d1e8;
+  --color-complementario: #c1e5d1;
+  --color-neutro-claro: #f9f7f9;
+  --color-neutro-oscuro: #5c3a5c;
+}
+
 body {
+  background-color: var(--color-neutro-claro);
+  color: var(--color-neutro-oscuro);
   font-family: Arial, sans-serif;
-  background-color: #bbd8cb;
-  padding: 2rem;
-}
-
-h1 {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.semester {
-  margin-bottom: 2rem;
 }
 
 .semester h2 {
-  background-color: #0077b6;
-  color: white;
-  padding: 0.75rem;
-  border-radius: 6px;
+  background-color: var(--color-primario);
+  color: var(--color-neutro-oscuro);
 }
 
 .course {
   background-color: white;
-  padding: 1rem;
-  border-radius: 6px;
-  margin: 0.5rem 0;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  cursor: pointer;
-  user-select: none;
+  border: 2px solid var(--color-primario);
+  color: var(--color-neutro-oscuro);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
-.course.locked {
-  pointer-events: none;
-  opacity: 0.5;
-  cursor: not-allowed;
+.course:hover:not(.locked) {
+  background-color: var(--color-secundario);
+  border-color: var(--color-primario-oscuro);
 }
 
 .course.completed {
+  background-color: var(--color-complementario);
   text-decoration: line-through;
-  background-color: #d1ffd1;
-}
-
-.details {
-  display: none;
-  margin-top: 0.5rem;
-  color: #444;
-  font-size: 0.95rem;
 }
